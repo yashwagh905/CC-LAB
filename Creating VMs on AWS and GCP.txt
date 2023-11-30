@@ -1,0 +1,19 @@
+Creating VMs on AWS and GCP
+AWS- EC2
+Starting from selecting an AMI(Amazin Machine Image) - Ubuntu Server 18.04 Free Tier
+Keep everything default after this
+Add tags- name and key value pair
+Add Security group- HTTP and HTTPS for accessing web and SMTP for mails
+slect or create key pair - save it in good place as it is required later
+LAUNCH- wait for status checks to be passed 
+DONE
+Now for connecting instance -
+keypair should be stored in format
+ssh -i 'c:\Users\yourusername\.ssh\MyKeyPair.pem' ec2-user@{IP_Address} - also command in git bash for connecting instance
+
+GCP-
+Create new project 
+Go to Compute Engine->VM instances->Create instance
+Keep all as default
+Allow HTTPS and HTTP Traffic in Firewall
+Create

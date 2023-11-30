@@ -1,0 +1,19 @@
+Firebase
+In the Google Cloud console, on the project selector page, select or create a Google Cloud project.
+Install the Google Cloud CLI.
+gcloud init
+git clone
+https://github.com/GoogleCloudPlatform/python-docs-samples.git
+cd python-docs-samples/appengine/standard/firebase/firenotes 
+
+install dependancies
+cd backend/
+pip install -t lib -r requirements.txt
+
+run project locally
+go to D:\CC-FireBase\python-docs-samples\appengine\standard\firebase\firenotes open terminal
+run - dev_appserver.py frontend/app.yaml backend/app.yaml
+
+Deploying
+Change the backend host URL in main.js to https://backend-dot-[PROJECT_ID].appspot.com. Replace [PROJECT_ID] with your project ID
+run - gcloud app deploy backend/index.yaml frontend/app.yaml backend/app.yaml 
