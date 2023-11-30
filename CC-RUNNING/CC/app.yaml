@@ -1,0 +1,8 @@
+runtime: python27  # Use Python 3.12 runtime
+threadsafe: false
+api_version: 1
+
+handlers:
+- url: /.*
+  script: test.app  # Automatically route requests to the main.py file
+ 
